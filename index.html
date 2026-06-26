@@ -1,137 +1,522 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grêmio Esportivo Campo Grande — esporte, história e comunidade em São Paulo.">
-  <title>Grêmio Esportivo Campo Grande</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-  <div class="barra-aviso"><p>Esporte e comunidade desde 1953</p><a href="contato.html">Fale com o clube</a></div>
-  <header class="cabecalho" id="inicio">
-    <div class="container cabecalho-conteudo">
-      <a class="logo" href="index.html" aria-label="Página inicial"><img src="https://gremiocampogrande.com.br/assets/images/01.-logo-gecg-semfundo-170x198.png" alt="Escudo do Grêmio Esportivo Campo Grande"><span>Grêmio <strong>Campo Grande</strong></span></a>
-      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="menu" id="menu"><a class="ativo" href="index.html">Home</a><a href="cdc.html">O CDC</a><a href="futebol.html">Futebol</a><a href="loja.html">Uniformes</a><a href="galeria.html">Galerias</a><a href="contato.html">Contato</a></nav>
-      <a class="botao-ligar cabecalho-ligar" href="tel:+551156314425" aria-label="Ligar para o Grêmio Campo Grande"><i class="fa-solid fa-phone"></i>11 5631-4425</a>
-    </div>
-  </header>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Protótipo de redesign do Grêmio Esportivo Campo Grande."
+    />
+    <title>Grêmio Campo Grande - Home</title>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-caixa">
-          <img class="hero-imagem" src="https://gremiocampogrande.com.br/assets/images/33a46eca-4947-4de8-a41a-0c07d098394d-1014x676.jpg" alt="Equipe do Grêmio Campo Grande no campo">
-          <div class="hero-sombra"></div>
-          <div class="hero-conteudo">
-            <p class="etiqueta etiqueta-clara">Desde 1953 em Campo Grande</p>
-            <h1>Esporte, história e comunidade.</h1>
-            <p class="hero-texto">O Grêmio Campo Grande e o CDC Maria Felizarda da Silva criam oportunidades para crianças, jovens, adultos e idosos.</p>
-            <div class="grupo-botoes"><a class="botao" href="#modalidades">Conhecer atividades</a><a class="botao botao-claro" href="cdc.html">Nossa história</a></div>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <script src="./assets/js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c79d6fb851.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Codigo desenvolvido por Manuela. -->
+    <div class="barra-aviso">
+      <p>Protótipo acadêmico do Grêmio Esportivo Campo Grande</p>
+      <a href="./pages/contato.html">Fale com o clube</a>
+    </div>
+
+    <!-- Cabecalho -->
+    <header class="site-header" id="inicio">
+      <nav class="navbar container" aria-label="Menu principal">
+        <a
+          class="logo"
+          href="./index.html"
+          aria-label="Voltar para a página inicial"
+        >
+          <img
+            src="./assets/media/01.-logo-gecg-semfundo-170x198.png"
+            alt="Escudo do Grêmio Campo Grande"
+          />
+          <span>Grêmio <strong>Campo Grande</strong></span>
+        </a>
+
+        <button
+          class="botao-menu"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="menu-principal"
+        >
+          <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
+        </button>
+
+        <ul class="navbar-links" id="menu-principal">
+          <li><a class="active" href="./index.html">Home</a></li>
+          <li><a href="./pages/cdc.html">O CDC</a></li>
+          <li><a href="./pages/futebol.html">Futebol</a></li>
+          <li><a href="./pages/loja.html">Uniformes</a></li>
+          <li><a href="./pages/galeria.html">Galerias</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+
+        <a class="botao header-contato" href="tel:+551156314425">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          11 5631-4425
+        </a>
+      </nav>
+    </header>
+
+    <!-- Conteudo principal -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <article class="hero-card">
+            <img
+              src="./assets/media/33a46eca-4947-4de8-a41a-0c07d098394d-1014x676.jpg"
+              alt="Equipe do Grêmio Campo Grande no campo"
+            />
+            <div class="hero-overlay"></div>
+
+            <div class="hero-conteudo">
+              <p class="section-p">Desde 1953 em Campo Grande</p>
+              <h1>Esporte, história e comunidade.</h1>
+              <p class="hero-text">
+                O Grêmio Campo Grande e o CDC Maria Felizarda da Silva criam
+                oportunidades para crianças, jovens, adultos e idosos.
+              </p>
+
+              <div class="hero-actions">
+                <a class="botao" href="#modalidades">Conhecer atividades</a>
+                <a class="botao secundario" href="./pages/cdc.html">
+                  Nossa história
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="hero-infos">
+            <article class="hero-info-card destaque">
+              <strong data-contador="1953">0</strong>
+              <span>início da nossa história</span>
+            </article>
+
+            <article class="hero-info-card">
+              <strong>Campo Grande</strong>
+              <p>São Paulo - SP</p>
+              <a
+                href="https://www.google.com/maps/dir//Av.+Salim+Antonio+Curiati,+225,+São+Paulo"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                Como chegar
+              </a>
+            </article>
           </div>
         </div>
-        <div class="hero-dados">
-          <div>
-            <strong><span class="contador" data-numero="1953">0</span></strong>
-            <span>início da nossa história</span>
+      </section>
+
+      <!-- Modalidades -->
+      <section id="modalidades">
+        <div class="container">
+          <div class="secao-cabecalho">
+            <div>
+              <p class="section-p">Nossas atividades</p>
+              <h2 class="section-title">Esporte para diferentes fases da vida</h2>
+            </div>
+            <p class="section-text">
+              As principais atividades do Grêmio e do CDC reunidas em um único
+              lugar. Cada cartão leva para o conteúdo correto.
+            </p>
           </div>
-          <div>
-            <strong>Campo Grande</strong>
-            <span>São Paulo — SP</span>
-            <a class="hero-local-link" href="https://www.google.com/maps/dir//Av.+Salim+Antonio+Curiati,+225,+São+Paulo" target="_blank" rel="noopener">
-              Como chegar <i class="fa-solid fa-arrow-right"></i>
+
+          <div class="modalidades-grid">
+            <a class="modalidade-card" href="./pages/futebol.html">
+              <img
+                src="./assets/media/33a46eca-4947-4de8-a41a-0c07d098394d-1600x1066-800x533.jpg"
+                alt="Futebol de base do Grêmio Campo Grande"
+              />
+              <div class="modalidade-conteudo">
+                <i class="fa-solid fa-futbol" aria-hidden="true"></i>
+                <h3>Futebol</h3>
+                <p>Base, feminino, master e veteranos.</p>
+              </div>
+            </a>
+
+            <a class="modalidade-card" href="./pages/cdc.html#atividades">
+              <img
+                src="./assets/media/84dc5766-4f5e-49b3-b2fe-714f1f950d17-1600x1200-800x600.jpg"
+                alt="Ginástica artística no CDC"
+              />
+              <div class="modalidade-conteudo">
+                <i class="fa-solid fa-person-running" aria-hidden="true"></i>
+                <h3>Ginástica artística</h3>
+                <p>Formação corporal e apresentações.</p>
+              </div>
+            </a>
+
+            <a class="modalidade-card" href="./pages/contato.html">
+              <img
+                src="./assets/media/c7ab9d7c-715e-40d4-8d6b-9acb7662ad23-1-676x676.jpeg"
+                alt="Ginástica para adultos e idosos"
+              />
+              <div class="modalidade-conteudo">
+                <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                <h3>Vida ativa</h3>
+                <p>Ginástica para adultos e idosos.</p>
+              </div>
+            </a>
+
+            <a class="modalidade-card" href="./pages/contato.html">
+              <img
+                src="./assets/media/4-491x494.png"
+                alt="Capoeira no Grêmio Campo Grande"
+              />
+              <div class="modalidade-conteudo">
+                <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                <h3>Capoeira</h3>
+                <p>Cultura e movimento para crianças e jovens.</p>
+              </div>
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="secao" id="modalidades">
-      <div class="container">
-        <div class="cabecalho-secao"><div><p class="etiqueta">Nossas atividades</p><h2>Esporte para diferentes fases da vida</h2></div><p>As principais atividades do Grêmio e do CDC reunidas em um único lugar. Cada cartão leva para o conteúdo correto.</p></div>
-        <div class="modalidades-home">
-          <a class="modalidade-home modalidade-destaque" href="futebol.html"><img src="https://gremiocampogrande.com.br/GALERIA5/assets/images/33a46eca-4947-4de8-a41a-0c07d098394d-1600x1066-800x533.jpg" alt="Futebol de base do Grêmio Campo Grande"><span class="modalidade-fundo"></span><span class="modalidade-conteudo"><i class="fa-solid fa-futbol"></i><strong>Futebol</strong><small>Base, feminino, master e veteranos</small><b>Conhecer <i class="fa-solid fa-arrow-right"></i></b></span></a>
-          <a class="modalidade-home" href="cdc.html#atividades"><img src="https://gremiocampogrande.com.br/GINASTICAARTISTICA/assets/images/84dc5766-4f5e-49b3-b2fe-714f1f950d17-1600x1200-800x600.jpg" alt="Ginástica artística no CDC"><span class="modalidade-fundo"></span><span class="modalidade-conteudo"><i class="fa-solid fa-person-running"></i><strong>Ginástica artística</strong><small>Formação corporal e apresentações</small><b>Conhecer <i class="fa-solid fa-arrow-right"></i></b></span></a>
-          <a class="modalidade-home" href="contato.html"><img src="https://gremiocampogrande.com.br/assets/images/c7ab9d7c-715e-40d4-8d6b-9acb7662ad23-1-676x676.jpeg" alt="Ginástica para adultos e idosos"><span class="modalidade-fundo"></span><span class="modalidade-conteudo"><i class="fa-solid fa-heart-pulse"></i><strong>Vida ativa</strong><small>Ginástica para adultos e idosos</small><b>Consultar <i class="fa-solid fa-arrow-right"></i></b></span></a>
-          <a class="modalidade-home" href="contato.html"><img src="https://gremiocampogrande.com.br/assets/images/4-491x494.png" alt="Capoeira no Grêmio Campo Grande"><span class="modalidade-fundo"></span><span class="modalidade-conteudo"><i class="fa-solid fa-people-group"></i><strong>Capoeira</strong><small>Cultura e movimento dos 5 aos 17 anos</small><b>Consultar <i class="fa-solid fa-arrow-right"></i></b></span></a>
+      <!-- Estrutura -->
+      <section class="estrutura-home">
+        <div class="container estrutura-grid">
+          <div class="estrutura-fotos">
+            <img
+              src="./assets/media/img-20190903-wa0004-816x724.jpeg"
+              alt="Campo e instalações esportivas do Grêmio"
+            />
+            <img
+              src="./assets/media/img-20190903-wa0057-1014x761.jpeg"
+              alt="Atividade realizada no CDC"
+            />
+            <img
+              src="./assets/media/7f794958-01bb-471f-8769-bcb82955a1db-1600x1200-800x600.jpg"
+              alt="Espaço de ginástica artística"
+            />
+          </div>
+
+          <div>
+            <p class="section-p">Nossa estrutura</p>
+            <h2 class="section-title">Um clube construído junto com o bairro</h2>
+            <p class="section-text">
+              O espaço cresceu desde os tempos da várzea e hoje recebe treinos,
+              jogos, atividades orientadas e encontros da comunidade.
+            </p>
+
+            <ul class="lista-estrutura">
+              <li>
+                <i class="fa-solid fa-futbol" aria-hidden="true"></i>
+                <div>
+                  <strong>Campos sintéticos</strong>
+                  <p>Espaços para futebol society e campo oficial.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-person-running" aria-hidden="true"></i>
+                <div>
+                  <strong>Área de ginástica</strong>
+                  <p>Ambiente para aulas, treinos e apresentações.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-people-roof" aria-hidden="true"></i>
+                <div>
+                  <strong>Convivência</strong>
+                  <p>Estrutura próxima das famílias e da comunidade.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a class="botao" href="./pages/cdc.html">Conhecer o CDC</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="secao home-estrutura">
-      <div class="container estrutura-home-grade">
-        <div class="estrutura-home-fotos"><img class="estrutura-foto-grande" src="https://gremiocampogrande.com.br/assets/images/img-20190903-wa0004-816x724.jpeg" alt="Campo e instalações esportivas do Grêmio"><img src="https://gremiocampogrande.com.br/assets/images/img-20190903-wa0057-1014x761.jpeg" alt="Atividade realizada no CDC"><img src="https://gremiocampogrande.com.br/GINASTICAARTISTICA/assets/images/7f794958-01bb-471f-8769-bcb82955a1db-1600x1200-800x600.jpg" alt="Espaço de ginástica artística"></div>
-        <div class="estrutura-home-texto">
-          <p class="etiqueta">Nossa estrutura</p><h2>Um clube construído junto com o bairro</h2><p>O espaço cresceu desde os tempos da várzea e hoje recebe treinos, jogos, atividades orientadas e encontros da comunidade.</p>
-          <ul class="lista-estrutura-home"><li><i class="fa-solid fa-futbol"></i><span><strong>Campos sintéticos</strong>Espaços para futebol society e campo oficial.</span></li><li><i class="fa-solid fa-person-running"></i><span><strong>Área de ginástica</strong>Ambiente para aulas, treinos e apresentações.</span></li><li><i class="fa-solid fa-people-roof"></i><span><strong>Convivência</strong>Estrutura próxima das famílias e da comunidade.</span></li></ul>
-          <a class="botao" href="cdc.html">Conhecer o CDC</a>
+      <!-- Cafu -->
+      <section class="home-cafu">
+        <div class="container cafu-grid">
+          <img
+            src="./assets/media/76e8d2d5-a71d-41fd-886c-c24dd9249acc-1080x1080.jpeg"
+            alt="Cafu em visita ao Grêmio Campo Grande"
+          />
+          <div>
+            <p class="section-p">Memória do clube</p>
+            <h2 class="section-title">Cafu nos deu a honra</h2>
+            <p class="section-text">
+              O capitão do pentacampeonato visitou o Grêmio Campo Grande. Esse
+              encontro faz parte da memória esportiva do clube.
+            </p>
+            <a class="botao" href="./pages/futebol.html">Conhecer essa história</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="secao home-cafu">
-      <div class="container cafu-home-grade">
-        <img src="https://gremiocampogrande.com.br/assets/images/76e8d2d5-a71d-41fd-886c-c24dd9249acc-1080x1080.jpeg" alt="Cafu em visita ao Grêmio Campo Grande">
-        <div><p class="etiqueta etiqueta-clara">Memória do clube</p><h2>Cafu nos deu a honra</h2><p>O capitão do pentacampeonato visitou o Grêmio Campo Grande. Um encontro especial com um dos maiores laterais da história do futebol brasileiro.</p><a class="link-claro" href="futebol.html">Conhecer essa história <i class="fa-solid fa-arrow-right"></i></a></div>
-      </div>
-    </section>
+      <!-- Loja -->
+      <section>
+        <div class="container loja-home-grid">
+          <div>
+            <p class="section-p">GECG Store</p>
+            <h2 class="section-title">Vista as cores do Grêmio</h2>
+            <p class="section-text">
+              Uniformes e acessórios em um catálogo simples. Consulte tamanhos,
+              valores e disponibilidade diretamente pelo WhatsApp.
+            </p>
 
-    <section class="secao">
-      <div class="container loja-home-caixa">
-        <div class="loja-home-texto"><p class="etiqueta">GECG Store</p><h2>Vista as cores do Grêmio</h2><p>Uniformes e acessórios oficiais em um catálogo simples. Consulte tamanhos, valores e disponibilidade diretamente pelo WhatsApp.</p><div class="loja-tags"><span>Uniformes</span><span>Camisas</span><span>Acessórios</span></div><a class="botao" href="loja.html">Abrir catálogo</a></div>
-        <div class="loja-home-imagem"><img src="https://gremiocampogrande.com.br/assets/images/whatsapp-image-2024-10-26-at-09.44.38-3-2000x2000-800x800.jpg" alt="Uniforme oficial do Grêmio Campo Grande"></div>
-      </div>
-    </section>
+            <ul class="tags">
+              <li>Uniformes</li>
+              <li>Camisas</li>
+              <li>Acessórios</li>
+            </ul>
 
-    <section class="secao home-pessoas">
-      <div class="container">
-        <div class="cabecalho-secao"><div><p class="etiqueta">Nossa equipe</p><h2>Pessoas que cuidam do clube</h2></div><a class="link-seta" href="cdc.html#equipe">Conhecer a equipe</a></div>
-        <div class="equipe-home"><article><img src="https://gremiocampogrande.com.br/assets/images/erenilde-1000x1250.jpg" alt="Erenilde"><span>Erenilde</span></article><article><img src="https://gremiocampogrande.com.br/assets/images/guilherme-1000x1250.jpg" alt="Guilherme"><span>Guilherme</span></article><article><img src="https://gremiocampogrande.com.br/assets/images/luciana-1000x1250.jpg" alt="Luciana"><span>Luciana</span></article><article><img src="https://gremiocampogrande.com.br/assets/images/wallaci-1-1000x1250.jpg" alt="Wallaci"><span>Wallaci</span></article></div>
-      </div>
-    </section>
+            <a class="botao" href="./pages/loja.html">Abrir catálogo</a>
+          </div>
 
-    <section class="secao">
-      <div class="container">
-        <div class="cabecalho-secao"><div><p class="etiqueta">Agenda e informação</p><h2>Eventos, festas e notícias</h2></div><p>Acompanhe atividades do clube e informações de interesse da comunidade.</p></div>
-        <div class="atualizacoes-grade">
-          <article class="evento-home"><div><i class="fa-regular fa-calendar-days"></i><span>Eventos e festas</span></div><h3>Próximos encontros do Grêmio</h3><p>Consulte o clube para saber sobre festas, apresentações e atividades abertas à comunidade.</p><a href="contato.html">Consultar agenda <i class="fa-solid fa-arrow-right"></i></a></article>
-          <a class="noticia-home" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/vigilancia_em_saude/index.php?p=278134" target="_blank" rel="noopener"><img src="https://gremiocampogrande.com.br/assets/images/sarampo-676x423.png" alt="Informação sobre vacinação"><span>Saúde</span><h3>Informações sobre vacinação</h3></a>
-          <a class="noticia-home" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/saude_e_protecao_ao_animal_domestico/index.php?p=282374" target="_blank" rel="noopener"><img src="https://gremiocampogrande.com.br/assets/images/castramovel-1566400700-300x200.png" alt="Informação sobre castração de animais"><span>Comunidade</span><h3>Castração de animais pela Prefeitura</h3></a>
-          <a class="noticia-home" href="http://combateromosquito.prefeitura.sp.gov.br/" target="_blank" rel="noopener"><img src="https://gremiocampogrande.com.br/assets/images/mbr-1-676x507.jpeg" alt="Combate ao mosquito da dengue"><span>Prevenção</span><h3>Todos contra a dengue</h3></a>
+          <img
+            src="./assets/media/whatsapp-image-2024-10-26-at-09.44.38-3-2000x2000-800x800.jpg"
+            alt="Uniforme oficial do Grêmio Campo Grande"
+          />
         </div>
+      </section>
+
+      <!-- Equipe -->
+      <section>
+        <div class="container">
+          <div class="secao-cabecalho">
+            <div>
+              <p class="section-p">Nossa equipe</p>
+              <h2 class="section-title">Pessoas que cuidam do clube</h2>
+            </div>
+            <a class="link-texto" href="./pages/cdc.html#equipe">
+              Conhecer a equipe
+            </a>
+          </div>
+
+          <div class="equipe-home-grid">
+            <article class="card equipe-card">
+              <img src="./assets/media/erenilde-1000x1250.jpg" alt="Erenilde" />
+              <h3>Erenilde</h3>
+            </article>
+
+            <article class="card equipe-card">
+              <img src="./assets/media/guilherme-1000x1250.jpg" alt="Guilherme" />
+              <h3>Guilherme</h3>
+            </article>
+
+            <article class="card equipe-card">
+              <img src="./assets/media/luciana-1000x1250.jpg" alt="Luciana" />
+              <h3>Luciana</h3>
+            </article>
+
+            <article class="card equipe-card">
+              <img src="./assets/media/wallaci-1-1000x1250.jpg" alt="Wallaci" />
+              <h3>Wallaci</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Agenda e noticias -->
+      <section>
+        <div class="container">
+          <div class="secao-cabecalho">
+            <div>
+              <p class="section-p">Agenda e informação</p>
+              <h2 class="section-title">Eventos, festas e notícias</h2>
+            </div>
+            <p class="section-text">
+              Acompanhe atividades do clube e informações de interesse da
+              comunidade.
+            </p>
+          </div>
+
+          <div class="atualizacoes-grid">
+            <article class="card evento-card">
+              <p class="section-p">Eventos e festas</p>
+              <h3>Próximos encontros do Grêmio</h3>
+              <p>
+                Consulte o clube para saber sobre festas, apresentações e
+                atividades abertas à comunidade.
+              </p>
+              <a class="botao secundario" href="./pages/contato.html">
+                Consultar agenda
+              </a>
+            </article>
+
+            <a class="card noticia-card" href="./pages/contato.html">
+              <img src="./assets/media/sarampo-676x423.png" alt="Vacinação" />
+              <div>
+                <span>Saúde</span>
+                <h3>Informações sobre vacinação</h3>
+              </div>
+            </a>
+
+            <a class="card noticia-card" href="./pages/contato.html">
+              <img
+                src="./assets/media/castramovel-1566400700-300x200.png"
+                alt="Castração de animais"
+              />
+              <div>
+                <span>Comunidade</span>
+                <h3>Castração de animais pela Prefeitura</h3>
+              </div>
+            </a>
+
+            <a class="card noticia-card" href="./pages/contato.html">
+              <img
+                src="./assets/media/mbr-1-676x507.jpeg"
+                alt="Combate ao mosquito da dengue"
+              />
+              <div>
+                <span>Prevenção</span>
+                <h3>Todos contra a dengue</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galerias -->
+      <section>
+        <div class="container">
+          <div class="secao-cabecalho">
+            <div>
+              <p class="section-p">Galerias</p>
+              <h2 class="section-title">Momentos que contam nossa história</h2>
+            </div>
+            <a class="link-texto" href="./pages/galeria.html">Ver todas</a>
+          </div>
+
+          <div class="galerias-grid">
+            <a class="galeria-home-card" href="./pages/galeria.html#futebol">
+              <img
+                src="./assets/media/06eb509a-e99e-4061-8065-c5c043ba1b64-1599x1599-800x800.jpg"
+                alt="Galeria do futebol de base"
+              />
+              <div>
+                <h3>Futebol de base</h3>
+                <p>9ª Copa Grêmio</p>
+              </div>
+            </a>
+
+            <a class="galeria-home-card" href="./pages/galeria.html#ginastica">
+              <img
+                src="./assets/media/94fad68d-36a8-4f48-8c11-3a659ba28895-1600x1200-800x600.jpg"
+                alt="Galeria da ginástica artística"
+              />
+              <div>
+                <h3>Ginástica artística</h3>
+                <p>Turmas de 2023 e 2019</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="contato-home">
+        <div class="container contato-box">
+          <div>
+            <p class="section-p">Fale com o clube</p>
+            <h2 class="section-title">Quer participar ou conhecer o espaço?</h2>
+            <p>
+              Consulte inscrições, horários, eventos e produtos da GECG Store.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a
+              class="botao secundario"
+              href="https://api.whatsapp.com/send?phone=5511976509180"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Chamar no WhatsApp
+            </a>
+            <a class="botao" href="./pages/contato.html">Ver contatos</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="site-footer">
+      <div class="footer-conteudo">
+        <div class="footer-marca">
+          <a class="logo" href="./index.html">
+            <img
+              src="./assets/media/01.-logo-gecg-semfundo-170x198.png"
+              alt="Escudo do Grêmio Campo Grande"
+            />
+            <span>Grêmio <strong>Campo Grande</strong></span>
+          </a>
+          <p>
+            Protótipo acadêmico de redesign do site Grêmio Esportivo Campo
+            Grande.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <ul>
+            <li class="footer-title">Páginas</li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/cdc.html">O CDC</a></li>
+            <li><a href="./pages/futebol.html">Futebol</a></li>
+            <li><a href="./pages/loja.html">Uniformes</a></li>
+            <li><a href="./pages/galeria.html">Galerias</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <address class="footer-contato">
+          <p class="footer-title">Contato</p>
+          <a href="tel:+551156314425">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            (11) 5631-4425
+          </a>
+          <a href="mailto:gremio.campo@uol.com.br">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            gremio.campo@uol.com.br
+          </a>
+          <p>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            São Paulo - SP
+          </p>
+        </address>
       </div>
-    </section>
 
-    <section class="secao home-galerias">
-      <div class="container">
-        <div class="cabecalho-secao"><div><p class="etiqueta">Galerias</p><h2>Momentos que contam nossa história</h2></div><a class="link-seta" href="galeria.html">Ver todas</a></div>
-        <div class="galerias-home-grade"><a href="galeria.html#futebol"><img src="https://gremiocampogrande.com.br/GALERIA5/assets/images/06eb509a-e99e-4061-8065-c5c043ba1b64-1599x1599-800x800.jpg" alt="Galeria do futebol de base"><span><strong>Futebol de base</strong><small>9ª Copa Grêmio</small></span></a><a href="galeria.html#ginastica"><img src="https://gremiocampogrande.com.br/GINASTICAARTISTICA/assets/images/94fad68d-36a8-4f48-8c11-3a659ba28895-1600x1200-800x600.jpg" alt="Galeria da ginástica artística"><span><strong>Ginástica artística</strong><small>Turmas de 2023 e 2019</small></span></a></div>
+      <div class="footer-description">
+        <p>
+          Desenvolvido por Manuela. Protótipo acadêmico sem vínculo oficial com
+          o clube.
+        </p>
+        <span class="footer-bottom">
+          &copy; <span id="ano"></span> Manuela. Todos os direitos reservados.
+        </span>
       </div>
-    </section>
+    </footer>
 
-    <section class="secao contato" id="contato">
-      <div class="container contato-caixa"><div><p class="etiqueta etiqueta-clara">Fale com o clube</p><h2>Quer participar ou conhecer o espaço?</h2><p>Consulte inscrições, horários, eventos e produtos da GECG Store.</p></div><div class="contato-acoes"><a class="botao botao-claro" href="https://api.whatsapp.com/send?phone=5511976509180" target="_blank" rel="noopener">Chamar no WhatsApp</a><a class="contato-telefone" href="contato.html">Ver todos os contatos</a></div></div>
-    </section>
-  </main>
-
-  <footer class="rodape">
-    <div class="container rodape-grade">
-      <div class="rodape-marca"><a class="logo logo-rodape" href="index.html"><img src="https://gremiocampogrande.com.br/assets/images/01.-logo-gecg-semfundo-170x198.png" alt=""><span>Grêmio <strong>Campo Grande</strong></span></a><p>Esporte, formação e comunidade em Campo Grande, São Paulo.</p></div>
-      <div><h3>Navegação</h3><a href="index.html">Home</a><a href="cdc.html">O CDC</a><a href="futebol.html">Futebol</a><a href="loja.html">Uniformes</a><a href="galeria.html">Galerias</a></div>
-      <div><h3>Contato</h3><a href="tel:+551156314425"><i class="fa-solid fa-phone"></i>(11) 5631-4425</a><a href="mailto:gremio.campo@uol.com.br"><i class="fa-solid fa-envelope"></i>gremio.campo@uol.com.br</a><p>Av. Salim Antonio Curiati, 225<br>Jurubatuba — São Paulo/SP</p></div>
-      <div><h3>Redes sociais</h3><a href="https://www.instagram.com/gremiocampo/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i>Instagram</a><a href="https://www.facebook.com/gremiocampo/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i>Facebook</a></div>
-    </div>
-    <div class="container rodape-final"><p>© <span id="ano"></span> Grêmio Esportivo Campo Grande.</p><a class="voltar-topo" href="#inicio">Voltar ao topo</a></div>
-  </footer>
-  <a class="whatsapp-flutuante" href="https://api.whatsapp.com/send?phone=5511976509180" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-  <script src="js/script.js"></script>
-</body>
+    <a
+      class="whatsapp-flutuante"
+      href="https://api.whatsapp.com/send?phone=5511976509180"
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar pelo WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+  </body>
 </html>
