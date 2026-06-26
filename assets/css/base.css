@@ -1,0 +1,363 @@
+﻿/* =========================================================
+   1. CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+:root {
+  --azul-escuro: #062a4a;
+  --azul: #0b4f82;
+  --azul-claro: #eaf3f8;
+  --verde-escuro: #062a4a;
+  --verde: #0b4f82;
+  --verde-vivo: #72d52c;
+  --verde-claro: #eef6f8;
+  --branco: #ffffff;
+  --gelo: #f7fafc;
+  --texto: #082e4d;
+  --texto-suave: #647685;
+  --borda: #dbe5eb;
+  --sombra: 0 18px 45px rgba(6, 42, 74, 0.12);
+  --raio-grande: 32px;
+  --raio-medio: 22px;
+  --raio-pequeno: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--branco);
+  color: var(--texto);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+
+body.menu-aberto {
+  overflow: hidden;
+}
+
+body.modal-aberto {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main a,
+.rodape a,
+.menu a {
+  transition:
+    color 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    opacity 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+main a:focus-visible,
+.rodape a:focus-visible,
+.menu a:focus-visible {
+  border-radius: 6px;
+  outline: 3px solid rgba(114, 213, 44, 0.42);
+  outline-offset: 4px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  letter-spacing: -0.025em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+
+.secao {
+  /* Espaçamento padrão das seções no desktop.
+     No mobile, responsive.css diminui esse valor. */
+  padding: 50px 0;
+}
+
+.secao-verde {
+  background: var(--verde-claro);
+  border-radius: var(--raio-grande);
+  margin: 0 18px;
+}
+
+.etiqueta {
+  align-items: center;
+  color: var(--verde);
+  display: flex;
+  font-size: 0.76rem;
+  font-weight: 700;
+  gap: 9px;
+  letter-spacing: 0.13em;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.etiqueta::before {
+  background: var(--verde-vivo);
+  content: "";
+  height: 2px;
+  width: 22px;
+}
+
+.etiqueta-clara {
+  color: var(--branco);
+}
+
+.texto-apoio {
+  color: var(--texto-suave);
+  max-width: 470px;
+}
+
+/* Animação aplicada pelo JavaScript */
+.animar {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.animar.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos comuns das paginas internas */
+.pagina-hero {
+  background: var(--gelo);
+  padding: 90px 0;
+}
+
+.pagina-hero-grade {
+  align-items: center;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 0.8fr;
+}
+
+.pagina-hero h1 {
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+
+.pagina-hero p:not(.etiqueta) {
+  color: var(--texto-suave);
+  font-size: 1.08rem;
+  max-width: 680px;
+}
+
+.pagina-hero-grade img {
+  border-radius: var(--raio-grande);
+  height: 430px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pagina-hero-central {
+  text-align: center;
+}
+
+.pagina-hero-central h1,
+.pagina-hero-loja h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagina-hero-central .etiqueta {
+  justify-content: center;
+}
+
+.pagina-hero-central p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos comuns de modal e lightbox */
+.modal-produto,
+.lightbox {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity: 0;
+  padding: 24px;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 0.22s ease;
+  z-index: 50;
+}
+
+.modal-produto.ativo,
+.lightbox.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-fundo,
+.lightbox-fundo {
+  background: rgba(3, 18, 32, 0.72);
+  inset: 0;
+  position: absolute;
+}
+
+.modal-caixa {
+  background: var(--branco);
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 0.9fr 1fr;
+  max-width: 920px;
+  overflow: hidden;
+  padding: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.modal-caixa > img {
+  border-radius: 20px;
+  height: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.modal-texto {
+  align-self: center;
+  padding: 28px 28px 28px 0;
+}
+
+.modal-texto h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+
+.modal-info {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+
+.modal-info div {
+  background: var(--gelo);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 15px 17px;
+}
+
+.modal-info span {
+  color: var(--azul);
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.modal-info p {
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+.modal-info strong {
+  color: var(--azul-escuro);
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+}
+
+.modal-info .modal-valor {
+  background: var(--verde-claro);
+  border-color: rgba(114, 213, 44, 0.5);
+}
+
+.modal-fechar,
+.lightbox-fechar {
+  align-items: center;
+  background: var(--branco);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 44px;
+  justify-content: center;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  width: 44px;
+  z-index: 2;
+}
+
+.modal-fechar:hover,
+.lightbox-fechar:hover {
+  background: var(--verde-vivo);
+  transform: rotate(8deg) scale(1.05);
+}
+
+.lightbox img {
+  border-radius: 24px;
+  max-height: 86vh;
+  max-width: min(1100px, 92vw);
+  object-fit: contain;
+  position: relative;
+  width: auto;
+}
+
+.rodape-simples {
+  padding-top: 20px;
+}
+
+.rodape-simples .rodape-final {
+  margin-top: 0;
+}
