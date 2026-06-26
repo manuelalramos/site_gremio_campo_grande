@@ -220,3 +220,5 @@ document.addEventListener("keydown", function (evento) {
     fecharLightbox();
   }
 });
+
+// Projeto desenvolvido por Manuela Ramos - contato.manuelalramos@gmail.com

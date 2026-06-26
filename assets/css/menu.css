@@ -129,6 +129,7 @@ body.menu-aberto {
   min-height: 50px;
   padding: 0 24px;
   white-space: nowrap;
+  transition: 0.2s;
 }
 
 .botao-ligar i {
@@ -140,6 +141,7 @@ body.menu-aberto {
   background: #0e679f;
   box-shadow: 0 16px 32px rgba(6, 42, 74, 0.22);
   transform: translateY(-2px);
+  transition: 0.2s;
 }
 
 .botao-menu {
