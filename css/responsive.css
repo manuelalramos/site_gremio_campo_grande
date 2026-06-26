@@ -1,0 +1,335 @@
+/* =========================================================
+   11. RESPONSIVIDADE
+   As regras abaixo adaptam o site para tablet e celular.
+   ========================================================= */
+
+@media (max-width: 980px) {
+  .cabecalho-ligar {
+    display: none;
+  }
+
+  .menu {
+    margin-right: 0;
+  }
+
+  .hero-conteudo {
+    max-width: 650px;
+    padding: 48px;
+  }
+
+  .grade-modalidades {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grade-modalidades > .cartao-foto:last-child {
+    grid-column: 1 / 3;
+    min-height: 350px;
+  }
+
+  .estrutura-grade,
+  .sobre-grade {
+    gap: 55px;
+  }
+
+  .contato-caixa {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contato-acoes {
+    align-items: flex-start;
+  }
+
+  .rodape-grade {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .rodape-grade > div:last-child {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .secao {
+    padding: 78px 0;
+  }
+
+  .secao-verde {
+    margin: 0 10px;
+  }
+
+  .barra-aviso p {
+    display: none;
+  }
+
+  .cabecalho-conteudo {
+    min-height: 74px;
+  }
+
+  .logo {
+    font-size: 0.95rem;
+  }
+
+  .logo img {
+    height: 46px;
+    width: 40px;
+  }
+
+  .botao-menu {
+    display: block;
+    position: relative;
+    z-index: 31;
+  }
+
+  .botao-menu.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .botao-menu.ativo span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .botao-menu.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    align-items: center;
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 26px;
+    inset: 0;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transform: translateY(-15px);
+    transition: 0.25s ease;
+    z-index: 30;
+  }
+
+  .menu.ativo {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .hero {
+    padding-top: 14px;
+  }
+
+  .hero-caixa {
+    min-height: 610px;
+  }
+
+  .hero-sombra {
+    background: linear-gradient(0deg, rgba(4, 34, 61, 0.97) 4%, rgba(4, 34, 61, 0.58) 70%, rgba(4, 34, 61, 0.15));
+  }
+
+  .hero-conteudo {
+    bottom: 0;
+    height: auto;
+    justify-content: flex-end;
+    max-width: none;
+    padding: 120px 28px 42px;
+    position: absolute;
+  }
+
+  .hero-conteudo h1 {
+    font-size: clamp(2.65rem, 10vw, 4rem);
+  }
+
+  .hero-texto {
+    font-size: 1rem;
+  }
+
+  .hero-dados {
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 18px;
+    max-width: 100%;
+  }
+
+  .hero-dados div {
+    min-width: 0;
+    min-height: 112px;
+    width: auto;
+  }
+
+  .titulo-linha {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .grade-modalidades,
+  .grade-programas,
+  .estrutura-grade,
+  .sobre-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-modalidades > .cartao-foto:last-child {
+    grid-column: auto;
+  }
+
+  .cartao-foto,
+  .cartao-foto-alto,
+  .grade-modalidades > .cartao-foto:last-child {
+    min-height: 410px;
+  }
+
+  .coluna-modalidades {
+    grid-template-rows: auto;
+  }
+
+  .estrutura-intro {
+    position: static;
+  }
+
+  .sobre-grade {
+    gap: 75px;
+  }
+
+  .sobre-imagens {
+    margin-right: 20px;
+  }
+
+  .sobre-selo {
+    height: 125px;
+    right: -25px;
+    width: 125px;
+  }
+
+  .grade-galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 310px 220px 220px;
+  }
+
+  .grade-galeria img:first-child {
+    grid-column: 1 / 3;
+    grid-row: auto;
+  }
+
+  .grade-galeria img:last-child {
+    grid-column: 1 / 3;
+  }
+
+  .rodape-grade {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rodape-grade > div:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-caixa {
+    border-radius: 24px;
+    min-height: 620px;
+  }
+
+  .hero-conteudo {
+    padding: 120px 22px 34px;
+  }
+
+  .grupo-botoes .botao {
+    width: 100%;
+  }
+
+  .hero-dados {
+    gap: 8px;
+    grid-template-columns: 1fr;
+    margin-top: 14px;
+    max-width: calc(100% - 28px);
+  }
+
+  .hero-dados div {
+    min-height: 100px;
+    padding: 16px 18px;
+  }
+
+  .hero-dados strong {
+    font-size: 1.3rem;
+  }
+
+  .lista-recursos,
+  .sobre-destaques {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-galeria {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grade-galeria img {
+    height: 280px;
+  }
+
+  .contato-caixa {
+    border-radius: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+  }
+
+  .contato-acoes,
+  .contato-acoes .botao {
+    width: 100%;
+  }
+
+  .rodape {
+    margin-top: 75px;
+  }
+
+  .rodape-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .rodape-final {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .whatsapp-flutuante {
+    bottom: 18px;
+    right: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (hover: none) {
+  .modalidade-home:hover,
+  .equipe-home article:hover,
+  .noticia-home:hover,
+  .galerias-home-grade a:hover,
+  .card-conteudo:hover,
+  .grade-categorias article:hover,
+  .atalhos-galeria a:hover,
+  .produto:hover,
+  .galeria-completa img:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}

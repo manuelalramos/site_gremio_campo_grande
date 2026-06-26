@@ -1,0 +1,803 @@
+/* =========================================================
+   ESTILOS DAS PÁGINAS INTERNAS
+   ========================================================= */
+
+.pagina-hero {
+  background: var(--gelo);
+  padding: 90px 0;
+}
+
+.pagina-hero-grade {
+  align-items: center;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 0.8fr;
+}
+
+.pagina-hero h1 {
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+
+.pagina-hero p:not(.etiqueta) {
+  color: var(--texto-suave);
+  font-size: 1.08rem;
+  max-width: 680px;
+}
+
+.pagina-hero-grade img {
+  border-radius: var(--raio-grande);
+  height: 430px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pagina-hero-central {
+  text-align: center;
+}
+
+.pagina-hero-central h1,
+.pagina-hero-loja h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagina-hero-central .etiqueta {
+  justify-content: center;
+}
+
+.pagina-hero-central p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagina-hero-foto {
+  background:
+    linear-gradient(90deg, rgba(4, 34, 61, 0.93), rgba(4, 34, 61, 0.2)),
+    url("https://gremiocampogrande.com.br/GALERIA5/assets/images/33a46eca-4947-4de8-a41a-0c07d098394d-1600x1066.jpg") center/cover;
+  color: var(--branco);
+  min-height: 620px;
+  padding-top: 145px;
+}
+
+.pagina-hero-foto p:not(.etiqueta) {
+  color: var(--branco);
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+.pagina-hero-sobre-foto {
+  max-width: 760px;
+}
+
+.pagina-hero-loja {
+  background: var(--verde-claro);
+  text-align: center;
+}
+
+.pagina-hero-loja .etiqueta {
+  justify-content: center;
+}
+
+.pagina-hero-loja p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagina-hero-loja h1 {
+  max-width: 780px;
+}
+
+.texto-historia {
+  max-width: 1050px;
+}
+
+.texto-historia h2 {
+  max-width: 850px;
+}
+
+.colunas-texto {
+  color: var(--texto-suave);
+  column-count: 2;
+  column-gap: 60px;
+  margin-top: 40px;
+}
+
+.colunas-texto p {
+  break-inside: avoid;
+  margin-bottom: 22px;
+}
+
+.estrutura-pagina {
+  align-items: center;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.estrutura-pagina > div:first-child > p:not(.etiqueta) {
+  color: var(--texto-suave);
+  margin-top: 22px;
+}
+
+.grade-dados,
+.grade-categorias {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grade-dados article,
+.grade-categorias article {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-medio);
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+}
+
+.grade-dados strong {
+  color: var(--verde);
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+}
+
+.grade-dados span,
+.grade-categorias p {
+  color: var(--texto-suave);
+  font-size: 0.88rem;
+}
+
+.grade-conteudo {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.secao-equipe {
+  background: var(--gelo);
+}
+
+.grade-equipe {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grade-equipe article {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.grade-equipe img {
+  aspect-ratio: 0.8;
+  object-fit: cover;
+  transition: filter 0.3s ease, transform 0.4s ease;
+  width: 100%;
+}
+
+.grade-equipe span {
+  display: block;
+  font-weight: 700;
+  padding: 14px 16px;
+}
+
+.grade-equipe article:hover {
+  border-color: rgba(114, 213, 44, 0.65);
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.15);
+  transform: translateY(-5px);
+}
+
+.grade-equipe article:hover img {
+  filter: saturate(1.08);
+  transform: scale(1.035);
+}
+
+.card-conteudo {
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-medio);
+  overflow: hidden;
+}
+
+.card-conteudo img {
+  height: 290px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-conteudo div {
+  padding: 28px;
+}
+
+.card-conteudo p {
+  color: var(--texto-suave);
+  line-height: 1.75;
+  margin: 12px 0 22px;
+}
+
+.card-conteudo a,
+.produto a {
+  color: #45a915;
+  font-weight: 700;
+  position: relative;
+  width: fit-content;
+}
+
+.produto a:hover {
+  color: #31830b;
+}
+
+.card-conteudo a::after,
+.produto a::after {
+  background: currentColor;
+  bottom: -4px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+  width: 100%;
+}
+
+.card-conteudo a:hover::after,
+.produto a:hover::after {
+  transform: scaleX(1);
+}
+
+.card-conteudo {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-conteudo img {
+  transition: transform 0.4s ease;
+}
+
+.card-conteudo:hover {
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.13);
+  transform: translateY(-5px);
+}
+
+.card-conteudo:hover img {
+  transform: scale(1.035);
+}
+
+.grade-categorias {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grade-categorias article {
+  min-height: 0;
+  padding: 14px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.grade-categorias span {
+  color: var(--verde);
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin: 18px 0 12px;
+  text-transform: uppercase;
+}
+
+.grade-categorias img {
+  aspect-ratio: 1.45;
+  border-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.grade-categorias h3 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.grade-categorias p {
+  line-height: 1.75;
+}
+
+.grade-categorias article:hover {
+  border-color: rgba(114, 213, 44, 0.75);
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.13);
+  transform: translateY(-5px);
+}
+
+.mosaico-futebol {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 260px 260px;
+}
+
+.mosaico-futebol img {
+  border-radius: var(--raio-medio);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.mosaico-futebol img:first-child {
+  grid-row: 1 / 3;
+}
+
+.homenagem {
+  align-items: center;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.homenagem img {
+  border-radius: var(--raio-grande);
+  width: 100%;
+}
+
+.homenagem p:not(.etiqueta) {
+  color: var(--texto-suave);
+  margin-top: 20px;
+}
+
+.grade-vitrine,
+.grade-produtos {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.produto-resumo,
+.produto {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-medio);
+  overflow: hidden;
+}
+
+.produto-resumo img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.produto-resumo span {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.produtos-secao {
+  padding-top: 70px;
+}
+
+.produto {
+  padding: 16px 16px 22px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.produto-botao {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.produto-botao img,
+.produto img {
+  aspect-ratio: 1;
+  border-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.produto-botao span {
+  background: rgba(6, 42, 74, 0.88);
+  border-radius: 999px;
+  bottom: 14px;
+  color: var(--branco);
+  font-size: 0.78rem;
+  font-weight: 700;
+  left: 50%;
+  opacity: 0;
+  padding: 9px 15px;
+  position: absolute;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  white-space: nowrap;
+}
+
+.produto:hover {
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.14);
+  transform: translateY(-5px);
+}
+
+.produto:hover .produto-botao img,
+.produto:hover img {
+  transform: scale(1.035);
+}
+
+.produto:hover .produto-botao span {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.produto h2 {
+  font-size: 1.15rem;
+  margin: 18px 0 10px;
+}
+
+.produto a {
+  font-size: 0.86rem;
+}
+
+.atalhos-galeria {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(190px, 260px));
+  justify-content: center;
+  margin: 34px auto 0;
+}
+
+.atalhos-galeria a {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(6, 42, 74, 0.08);
+  color: var(--texto);
+  display: grid;
+  gap: 12px;
+  padding: 10px 10px 14px;
+}
+
+.atalhos-galeria img {
+  aspect-ratio: 1.7;
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.atalhos-galeria span {
+  font-weight: 800;
+}
+
+.atalhos-galeria a:hover {
+  border-color: var(--verde-vivo);
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.14);
+  color: var(--azul);
+  transform: translateY(-4px);
+}
+
+.galeria-completa {
+  columns: 3;
+  column-gap: 16px;
+}
+
+.galeria-completa img {
+  border-radius: 16px;
+  cursor: zoom-in;
+  margin-bottom: 16px;
+  transition: box-shadow 0.25s ease, filter 0.25s ease, transform 0.25s ease;
+  width: 100%;
+}
+
+.galeria-completa img:hover {
+  box-shadow: 0 16px 32px rgba(6, 42, 74, 0.18);
+  filter: saturate(1.08);
+  transform: translateY(-4px);
+}
+
+.contato-grade {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-lista {
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-grande);
+  padding: 18px 34px;
+}
+
+.contato-lista article {
+  border-bottom: 1px solid var(--borda);
+  align-items: flex-start;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 42px 1fr;
+  padding: 20px 0;
+}
+
+.contato-lista article > i {
+  align-items: center;
+  background: var(--verde-claro);
+  border-radius: 12px;
+  color: var(--azul);
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.contato-lista article:last-child {
+  border-bottom: 0;
+}
+
+.contato-lista span {
+  color: var(--texto-suave);
+  font-size: 0.78rem;
+  margin-bottom: 5px;
+}
+
+.contato-lista a,
+.contato-lista strong {
+  font-size: 1.08rem;
+}
+
+.contato-lista a:hover {
+  color: #45a915;
+  transform: translateX(4px);
+}
+
+.endereco-card {
+  background: var(--verde-escuro);
+  border-radius: var(--raio-grande);
+  color: var(--branco);
+  padding: 55px;
+}
+
+.endereco-card h2 {
+  margin-bottom: 20px;
+}
+
+.endereco-card p:not(.etiqueta) {
+  margin-bottom: 35px;
+  opacity: 0.75;
+}
+
+.redes-contato {
+  background: var(--verde-claro);
+}
+
+.modal-produto,
+.lightbox {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity: 0;
+  padding: 24px;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 0.22s ease;
+  z-index: 50;
+}
+
+.modal-produto.ativo,
+.lightbox.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-fundo,
+.lightbox-fundo {
+  background: rgba(3, 18, 32, 0.72);
+  inset: 0;
+  position: absolute;
+}
+
+.modal-caixa {
+  background: var(--branco);
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 0.9fr 1fr;
+  max-width: 920px;
+  overflow: hidden;
+  padding: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.modal-caixa > img {
+  border-radius: 20px;
+  height: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.modal-texto {
+  align-self: center;
+  padding: 28px 28px 28px 0;
+}
+
+.modal-texto h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+
+.modal-info {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+
+.modal-info div {
+  background: var(--gelo);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 15px 17px;
+}
+
+.modal-info span {
+  color: var(--azul);
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.modal-info p {
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+.modal-info strong {
+  color: var(--azul-escuro);
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+}
+
+.modal-info .modal-valor {
+  background: var(--verde-claro);
+  border-color: rgba(114, 213, 44, 0.5);
+}
+
+.modal-fechar,
+.lightbox-fechar {
+  align-items: center;
+  background: var(--branco);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 44px;
+  justify-content: center;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  width: 44px;
+  z-index: 2;
+}
+
+.modal-fechar:hover,
+.lightbox-fechar:hover {
+  background: var(--verde-vivo);
+  transform: rotate(8deg) scale(1.05);
+}
+
+.lightbox img {
+  border-radius: 24px;
+  max-height: 86vh;
+  max-width: min(1100px, 92vw);
+  object-fit: contain;
+  position: relative;
+  width: auto;
+}
+
+.rodape-simples {
+  padding-top: 20px;
+}
+
+.rodape-simples .rodape-final {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .pagina-hero-grade,
+  .estrutura-pagina {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina-hero-grade img {
+    height: 360px;
+  }
+
+  .grade-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grade-equipe {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .pagina-hero {
+    padding: 65px 0;
+  }
+
+  .pagina-hero h1 {
+    font-size: clamp(2.35rem, 11vw, 3.5rem);
+  }
+
+  .pagina-hero-foto {
+    min-height: 560px;
+    padding-top: 100px;
+  }
+
+  .colunas-texto {
+    column-count: 1;
+  }
+
+  .grade-dados,
+  .grade-conteudo,
+  .grade-categorias,
+  .grade-vitrine,
+  .contato-grade,
+  .homenagem {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaico-futebol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mosaico-futebol img {
+    height: 310px;
+  }
+
+  .galeria-completa {
+    columns: 2;
+  }
+
+  .modal-caixa {
+    grid-template-columns: 1fr;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-texto {
+    padding: 0 10px 10px;
+  }
+
+  .grade-equipe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .grade-produtos {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-completa {
+    columns: 1;
+  }
+
+  .atalhos-galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .endereco-card {
+    padding: 34px 26px;
+  }
+}

@@ -1,0 +1,168 @@
+/* =========================================================
+   1. CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+:root {
+  --azul-escuro: #062a4a;
+  --azul: #0b4f82;
+  --azul-claro: #eaf3f8;
+  --verde-escuro: #062a4a;
+  --verde: #0b4f82;
+  --verde-vivo: #72d52c;
+  --verde-claro: #eef6f8;
+  --branco: #ffffff;
+  --gelo: #f7fafc;
+  --texto: #082e4d;
+  --texto-suave: #647685;
+  --borda: #dbe5eb;
+  --sombra: 0 18px 45px rgba(6, 42, 74, 0.12);
+  --raio-grande: 32px;
+  --raio-medio: 22px;
+  --raio-pequeno: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--branco);
+  color: var(--texto);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+
+body.menu-aberto {
+  overflow: hidden;
+}
+
+body.modal-aberto {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main a,
+.rodape a,
+.menu a {
+  transition:
+    color 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    opacity 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+main a:focus-visible,
+.rodape a:focus-visible,
+.menu a:focus-visible {
+  border-radius: 6px;
+  outline: 3px solid rgba(114, 213, 44, 0.42);
+  outline-offset: 4px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  letter-spacing: -0.025em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+
+.secao {
+  padding: 110px 0;
+}
+
+.secao-verde {
+  background: var(--verde-claro);
+  border-radius: var(--raio-grande);
+  margin: 0 18px;
+}
+
+.etiqueta {
+  align-items: center;
+  color: var(--verde);
+  display: flex;
+  font-size: 0.76rem;
+  font-weight: 700;
+  gap: 9px;
+  letter-spacing: 0.13em;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.etiqueta::before {
+  background: var(--verde-vivo);
+  content: "";
+  height: 2px;
+  width: 22px;
+}
+
+.etiqueta-clara {
+  color: var(--branco);
+}
+
+.texto-apoio {
+  color: var(--texto-suave);
+  max-width: 470px;
+}
+
+/* Animação aplicada pelo JavaScript */
+.animar {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.animar.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
