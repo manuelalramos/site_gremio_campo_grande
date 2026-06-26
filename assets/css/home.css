@@ -525,102 +525,14 @@
   opacity: 0.76;
 }
 
-@media (max-width: 900px) {
-  .modalidades-home {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 360px 280px;
-  }
 
-  .modalidade-destaque {
-    grid-row: auto;
-  }
-
-  .modalidade-home:last-child {
-    grid-column: auto;
-  }
-
-  .estrutura-home-grade,
-  .cafu-home-grade,
-  .loja-home-caixa {
-    grid-template-columns: 1fr;
-  }
-
-  .loja-home-caixa {
-    padding: 0;
-  }
-
-  .loja-home-texto {
-    padding: 50px;
-  }
-
-  .loja-home-imagem img {
-    max-height: 520px;
-  }
-
-  .atualizacoes-grade {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .evento-home {
-    grid-row: auto;
-    min-height: 360px;
-  }
-
-  .evento-home h3 {
-    margin-top: 90px;
-  }
+.contato-telefone{
+  transition: 0.3s;
+}
+.contato-telefone:hover{
+  color: var(--verde-vivo);
+  transition: 0.2s ease-out;
 }
 
-@media (max-width: 760px) {
-  .cabecalho-secao {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 16px;
-  }
 
-  .modalidades-home,
-  .atualizacoes-grade,
-  .galerias-home-grade {
-    grid-template-columns: 1fr;
-  }
-
-  .modalidades-home {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .modalidade-home {
-    min-height: 390px;
-  }
-
-  .estrutura-home-fotos {
-    grid-template-rows: 180px 180px;
-  }
-
-  .cafu-home-grade {
-    gap: 42px;
-  }
-
-  .equipe-home {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .galerias-home-grade a {
-    min-height: 350px;
-  }
-}
-
-@media (max-width: 520px) {
-  .estrutura-home-fotos {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .estrutura-home-fotos img {
-    height: 260px;
-  }
-
-  .loja-home-texto {
-    padding: 35px 26px;
-  }
-}
+/* Projeto desenvolvido por Manuela Ramos - contato.manuelalramos@gmail.com */

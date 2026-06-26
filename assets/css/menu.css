@@ -1,0 +1,165 @@
+/* =========================================================
+   2. MENU E CABEÇALHO
+   ========================================================= */
+
+body.menu-aberto {
+  overflow: hidden;
+}
+
+.barra-aviso {
+  align-items: center;
+  background: var(--verde-escuro);
+  color: var(--branco);
+  display: flex;
+  font-size: 0.88rem;
+  gap: 24px;
+  justify-content: center;
+  min-height: 46px;
+  padding: 8px 24px;
+  text-align: center;
+}
+
+.barra-aviso a {
+  color: var(--verde-vivo);
+  font-weight: 700;
+}
+
+.cabecalho {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--borda);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.cabecalho-conteudo {
+  align-items: center;
+  display: flex;
+  min-height: 86px;
+}
+
+.logo {
+  align-items: center;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  gap: 10px;
+  line-height: 1.05;
+}
+
+.logo img {
+  height: 54px;
+  object-fit: contain;
+  width: 47px;
+}
+
+.logo span {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo strong {
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  gap: clamp(18px, 2.4vw, 34px);
+  margin: 0 auto;
+}
+
+.menu a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  position: relative;
+  transition:
+    color 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    opacity 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.menu a::after {
+  background: var(--verde-vivo);
+  bottom: -8px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: var(--azul);
+}
+
+.menu a.ativo::after {
+  transform: scaleX(1);
+}
+
+.menu a:focus-visible {
+  border-radius: 6px;
+  outline: 3px solid rgba(114, 213, 44, 0.42);
+  outline-offset: 4px;
+}
+
+.botao-ligar {
+  align-items: center;
+  background: var(--azul);
+  border-radius: 999px;
+  box-shadow: 0 12px 26px rgba(6, 42, 74, 0.16);
+  color: var(--branco);
+  display: inline-flex;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 800;
+  gap: 10px;
+  min-height: 50px;
+  padding: 0 24px;
+  white-space: nowrap;
+}
+
+.botao-ligar i {
+  font-size: 0.92em;
+  margin-right: 8px;
+}
+
+.botao-ligar:hover {
+  background: #0e679f;
+  box-shadow: 0 16px 32px rgba(6, 42, 74, 0.22);
+  transform: translateY(-2px);
+}
+
+.botao-menu {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  height: 44px;
+  margin-left: auto;
+  width: 44px;
+}
+
+.botao-menu span {
+  background: var(--verde-escuro);
+  display: block;
+  height: 2px;
+  margin: 6px auto;
+  transition: 0.25s ease;
+  width: 23px;
+}
+
+
+/* Projeto desenvolvido por Manuela Ramos - contato.manuelalramos@gmail.com */

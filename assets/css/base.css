@@ -39,10 +39,6 @@ body {
   line-height: 1.6;
 }
 
-body.menu-aberto {
-  overflow: hidden;
-}
-
 body.modal-aberto {
   overflow: hidden;
 }
@@ -58,8 +54,7 @@ a {
 }
 
 main a,
-.rodape a,
-.menu a {
+.rodape a {
   transition:
     color 0.22s ease,
     background-color 0.22s ease,
@@ -70,8 +65,7 @@ main a,
 }
 
 main a:focus-visible,
-.rodape a:focus-visible,
-.menu a:focus-visible {
+.rodape a:focus-visible {
   border-radius: 6px;
   outline: 3px solid rgba(114, 213, 44, 0.42);
   outline-offset: 4px;
@@ -361,3 +355,5 @@ h3 {
 .rodape-simples .rodape-final {
   margin-top: 0;
 }
+
+/* Projeto desenvolvido por Manuela Ramos - contato.manuelalramos@gmail.com */
