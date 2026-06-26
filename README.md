@@ -2,42 +2,50 @@
 
 Projeto simples feito apenas com HTML, CSS e JavaScript.
 
+Protótipo acadêmico desenvolvido por Manuela.
+
 ## Estrutura
 
 ```text
 gremio/
 ├── index.html
-├── cdc.html
-├── futebol.html
-├── loja.html
-├── galeria.html
-├── contato.html
-├── css/
-│   ├── base.css
-│   ├── components.css
-│   ├── home.css
-│   ├── pages.css
-│   └── responsive.css
-└── js/
-    └── script.js
+├── pages/
+│   ├── cdc.html
+│   ├── futebol.html
+│   ├── loja.html
+│   ├── galeria.html
+│   └── contato.html
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   ├── base.css
+│   │   ├── components.css
+│   │   ├── home.css
+│   │   ├── cdc.css
+│   │   ├── futebol.css
+│   │   ├── contato.css
+│   │   ├── loja.css
+│   │   ├── galeria.css
+│   │   └── responsive.css
+│   ├── js/
+│   │   └── script.js
+│   └── media/
+│       └── imagens do projeto
+└── manual/
+    └── manual-visual-gecg.png
 ```
 
-## O que existe em cada arquivo
+## Como o CSS foi separado
 
-- `index.html`: conteúdo e estrutura da página.
-- `cdc.html`: história e estrutura do CDC Maria Felizarda da Silva.
-- `futebol.html`: categorias masculinas, femininas e futebol de base.
-- `loja.html`: catálogo de uniformes e produtos com pedido pelo WhatsApp.
-- `galeria.html`: galerias separadas de futebol e ginástica artística.
-- `contato.html`: telefones, endereço, horário e redes sociais.
-- `css/base.css`: cores, fontes e configurações gerais.
-- `css/components.css`: aparência das seções, cards, botões e rodapé.
-- `css/responsive.css`: adaptação para tablet e celular.
-- `js/script.js`: menu mobile, ano automático e animação de rolagem.
+- `main.css`: arquivo único chamado nos HTMLs. Ele faz os imports.
+- `base.css`: cores, fontes, configurações gerais e estilos comuns.
+- `components.css`: botões, menu, hero, rodapé e componentes reutilizáveis.
+- `home.css`: estilos da página inicial.
+- `cdc.css`, `futebol.css`, `contato.css`, `loja.css`, `galeria.css`: estilos específicos de cada página.
+- `responsive.css`: ajustes para tablet e celular.
 
-## Como abrir
+## Observações
 
-Abra o arquivo `index.html` no navegador.
-
-As imagens são carregadas do site atual do Grêmio Campo Grande para preservar o
-conteúdo real do clube.
+- As fotos ficam em `assets/media`.
+- O Font Awesome é carregado pelo kit no HTML.
+- Este projeto é um protótipo acadêmico e não possui vínculo oficial com o clube.
