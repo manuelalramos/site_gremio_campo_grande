@@ -1,0 +1,58 @@
+﻿/* CSS da pagina Galerias */
+
+.atalhos-galeria {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(190px, 260px));
+  justify-content: center;
+  margin: 34px auto 0;
+}
+
+.atalhos-galeria a {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(6, 42, 74, 0.08);
+  color: var(--texto);
+  display: grid;
+  gap: 12px;
+  padding: 10px 10px 14px;
+}
+
+.atalhos-galeria img {
+  aspect-ratio: 1.7;
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.atalhos-galeria span {
+  font-weight: 800;
+}
+
+.atalhos-galeria a:hover {
+  border-color: var(--verde-vivo);
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.14);
+  color: var(--azul);
+  transform: translateY(-4px);
+}
+
+.galeria-completa {
+  columns: 3;
+  column-gap: 16px;
+}
+
+.galeria-completa img {
+  border-radius: 16px;
+  cursor: zoom-in;
+  margin-bottom: 16px;
+  transition: box-shadow 0.25s ease, filter 0.25s ease, transform 0.25s ease;
+  width: 100%;
+}
+
+.galeria-completa img:hover {
+  box-shadow: 0 16px 32px rgba(6, 42, 74, 0.18);
+  filter: saturate(1.08);
+  transform: translateY(-4px);
+}
+

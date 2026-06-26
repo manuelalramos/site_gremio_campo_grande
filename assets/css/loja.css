@@ -1,0 +1,141 @@
+/* CSS da página Uniformes */
+
+.pagina-hero-loja {
+  background: var(--verde-claro);
+  text-align: center;
+}
+
+.pagina-hero-loja .etiqueta {
+  justify-content: center;
+}
+
+.pagina-hero-loja p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagina-hero-loja h1 {
+  max-width: 780px;
+}
+
+.grade-vitrine,
+.grade-produtos {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.produto-resumo,
+.produto {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-medio);
+  overflow: hidden;
+}
+
+.produto-resumo img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.produto-resumo span {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.produtos-secao {
+  padding-top: 70px;
+}
+
+.produto {
+  padding: 16px 16px 22px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.produto-botao {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.produto-botao img,
+.produto img {
+  aspect-ratio: 1;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.produto-botao span {
+  background: rgba(6, 42, 74, 0.88);
+  border-radius: 999px;
+  bottom: 14px;
+  color: var(--branco);
+  font-size: 0.78rem;
+  font-weight: 700;
+  left: 50%;
+  opacity: 0;
+  padding: 9px 15px;
+  position: absolute;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  white-space: nowrap;
+}
+
+.produto:hover {
+  box-shadow: 0 18px 38px rgba(6, 42, 74, 0.14);
+  transform: translateY(-5px);
+}
+
+.produto:hover .produto-botao img,
+.produto:hover img {
+  transform: scale(1.035);
+}
+
+.produto:hover .produto-botao span {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.produto h2 {
+  font-size: 1.15rem;
+  margin: 18px 0 10px;
+}
+
+.produto a {
+  color: #45a915;
+  font-size: 0.86rem;
+  font-weight: 700;
+  position: relative;
+  width: fit-content;
+}
+
+.produto a:hover {
+  color: #31830b;
+}
+
+.produto a::after {
+  background: currentColor;
+  bottom: -4px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+  width: 100%;
+}
+
+.produto a:hover::after {
+  transform: scaleX(1);
+}

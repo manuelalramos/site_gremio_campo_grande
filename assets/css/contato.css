@@ -1,0 +1,82 @@
+﻿/* CSS da pagina Contato */
+
+.contato-grade {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-lista {
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-grande);
+  padding: 18px 34px;
+}
+
+.contato-lista article {
+  border-bottom: 1px solid var(--borda);
+  align-items: flex-start;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 42px 1fr;
+  padding: 20px 0;
+}
+
+.contato-lista article > i {
+  align-items: center;
+  background: var(--verde-claro);
+  border-radius: 12px;
+  color: var(--azul);
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.contato-lista article div {
+  min-width: 0;
+}
+
+.contato-lista article:last-child {
+  border-bottom: 0;
+}
+
+.contato-lista span {
+  color: var(--texto-suave);
+  display: block;
+  font-size: 0.78rem;
+  margin-bottom: 5px;
+}
+
+.contato-lista a,
+.contato-lista strong {
+  display: inline-block;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.contato-lista a:hover {
+  color: #45a915;
+  transform: translateX(4px);
+}
+
+.endereco-card {
+  background: var(--verde-escuro);
+  border-radius: var(--raio-grande);
+  color: var(--branco);
+  padding: 55px;
+}
+
+.endereco-card h2 {
+  margin-bottom: 20px;
+}
+
+.endereco-card p:not(.etiqueta) {
+  margin-bottom: 35px;
+  opacity: 0.75;
+}
+
+.redes-contato {
+  background: var(--verde-claro);
+}
+
