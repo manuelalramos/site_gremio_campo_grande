@@ -680,19 +680,46 @@
   transform: translateX(3px);
 }
 
+.rodape-final {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  font-size: 0.78rem;
+  gap: 18px;
+  grid-template-columns: 1fr auto 1fr;
+  margin-top: 55px;
+  padding-top: 22px;
+}
+
+.rodape-final p {
+  opacity: 0.62;
+}
+
+.rodape-final a {
+  opacity: 0.76;
+}
+
 .rodape-final a:hover {
   color: var(--verde-vivo);
   opacity: 1;
 }
 
-.rodape-final {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  display: flex;
-  font-size: 0.78rem;
-  justify-content: space-between;
-  margin-top: 55px;
-  opacity: 0.58;
-  padding-top: 22px;
+.made-by {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 700;
+  gap: 9px;
+  justify-self: center;
+}
+
+.made-by img {
+  height: 28px;
+  object-fit: contain;
+  width: 28px;
+}
+
+.voltar-topo {
+  justify-self: end;
 }
 
 .whatsapp-flutuante {

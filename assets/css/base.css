@@ -3,6 +3,8 @@
    ========================================================= */
 
 :root {
+  color-scheme: light;
+  color-scheme: only light;
   --azul-escuro: #062a4a;
   --azul: #0b4f82;
   --azul-claro: #eaf3f8;
@@ -28,6 +30,9 @@
 }
 
 html {
+  background: var(--branco);
+  color-scheme: light;
+  color-scheme: only light;
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
